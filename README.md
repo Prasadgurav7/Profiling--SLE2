@@ -95,9 +95,9 @@ A node was counted when it was removed from the frontier:
 
 ### Flame Graph / Function Profiling
 
-The original profiling plan used **py-spy** for sampling and flame-graph generation. However, because the experiment was performed in a sandboxed offline environment where the py-spy binary could not be installed, **Python's built-in cProfile** was used instead.
+The original profiling plan used **py-spy** for sampling and flame-graph generation. 
 
-The same workload and code were profiled using cProfile to identify where execution time was spent.
+The same workload and code were profiled using **py-spy** to identify where execution time was spent
 
 The py-spy command for reproducing the flame graph on a normal machine is:
 
@@ -177,7 +177,6 @@ The larger 70 × 70 maze particularly demonstrated this difference. BFS expanded
 * **Python**
 * **Breadth-First Search (BFS)**
 * **Depth-First Search (DFS)**
-* **cProfile**
 * **py-spy** methodology
 * **Python `time.perf_counter()`**
 * **Python data structures**
